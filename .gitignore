@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated outputs
+outputs/*
+!outputs/.gitkeep
+
+# Downloaded model/source directories
+DDColor/
+
+# Model/cache files
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Hugging Face / Transformers cache
+.cache/
+.huggingface/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
