@@ -1,37 +1,32 @@
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
-
-# Virtual environments
-.venv/
-venv/
-env/
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Generated outputs
-outputs/*
-!outputs/.gitkeep
+# Virtual environments
+venv/
+.venv/
+env/
 
-# Downloaded model/source directories
-DDColor/
+# Environment files
+.env
 
-# Model/cache files
+# AI model files
 *.pt
 *.pth
 *.ckpt
 *.safetensors
 
-# Hugging Face / Transformers cache
-.cache/
-.huggingface/
+# Output files
+outputs/
+results/
+generated/
 
-# OS files
+# Cache
+.cache/
+
+# System files
 .DS_Store
 Thumbs.db
-
-# IDE
-.vscode/
-.idea/
