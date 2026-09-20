@@ -1,68 +1,98 @@
-# Old Photo AI 🖼️✨
+# 🖼️ Old Photo AI | بازسازی هوشمند تصاویر قدیمی با هوش مصنوعی
 
-AI-powered old photo restoration and enhancement tool.
+<div align="center">
 
-Old Photo AI uses modern deep learning models to restore damaged old photos, remove scratches, repair missing areas, and improve image quality.
+یک ابزار هوشمند برای ترمیم، رنگی‌سازی و بهبود کیفیت عکس‌های قدیمی با استفاده از مدل‌های پیشرفته هوش مصنوعی.
 
----
-
-## ✨ Features
-
-- 🖼️ Old photo restoration
-- 🧹 Scratch and damage removal
-- 🎨 AI color enhancement
-- 🤖 SAM 2 segmentation
-- 🧠 LaMa AI inpainting
-- 🎨 DDColor image colorization
-- ⚡ CUDA GPU acceleration
-- 🌐 Gradio web interface
-- 📱 Google Colab support
+</div>
 
 ---
 
-# 🚀 Installation
+## ✨ معرفی پروژه
 
-## Google Colab (Recommended)
+**Old Photo AI** یک پروژه مبتنی بر هوش مصنوعی است که به شما اجازه می‌دهد تصاویر قدیمی، خراب یا سیاه‌وسفید را بازسازی کنید.
 
-### 1. Clone the repository
+این پروژه با استفاده از مدل‌های Deep Learning می‌تواند:
+
+- خط و خش‌های عکس را حذف کند
+- قسمت‌های آسیب‌دیده را بازسازی کند
+- کیفیت تصویر را افزایش دهد
+- عکس‌های سیاه‌وسفید را رنگی کند
+- جزئیات از دست‌رفته را ترمیم کند
+
+---
+
+# 🚀 قابلیت‌ها
+
+✅ بازسازی عکس‌های قدیمی  
+✅ حذف خط و خش و آسیب‌های تصویر  
+✅ ترمیم بخش‌های حذف‌شده تصویر  
+✅ رنگی‌سازی تصاویر سیاه‌وسفید  
+✅ استفاده از GPU برای سرعت بیشتر  
+✅ رابط کاربری ساده با Gradio  
+✅ پشتیبانی از Google Colab  
+✅ دانلود خودکار مدل‌های هوش مصنوعی  
+
+---
+
+# 🤖 مدل‌های استفاده شده
+
+این پروژه از چند مدل قدرتمند هوش مصنوعی استفاده می‌کند:
+
+### SAM 2
+برای تشخیص و جداسازی بخش‌های مختلف تصویر.
+
+### LaMa Inpainting
+برای بازسازی قسمت‌های خراب و حذف‌شده عکس.
+
+### DDColor
+برای رنگی‌سازی تصاویر قدیمی.
+
+---
+
+# 🛠️ نصب و اجرا
+
+## روش اول: اجرای سریع با Google Colab (پیشنهادی)
+
+### 1. دریافت پروژه
 
 ```bash
 git clone https://github.com/hamzeht1392-ops/Old-Photo-AI.git
 ```
 
-### 2. Enter the project folder
+### 2. ورود به پوشه پروژه
 
 ```bash
 cd Old-Photo-AI
 ```
 
-### 3. Install dependencies
+### 3. نصب پیش‌نیازها
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run the application
+### 4. اجرای برنامه
 
 ```bash
 python app.py
 ```
 
-After loading the AI models, Gradio will create a public link.
+بعد از اجرای موفق، یک لینک Gradio دریافت می‌کنید.
 
-Open the link in your browser and start restoring photos.
+لینک را در مرورگر باز کنید و شروع به بازسازی تصاویر کنید.
 
 ---
 
-# 💻 Local Installation
+# 💻 نصب روی کامپیوتر شخصی
 
-## Requirements
+## نیازمندی‌ها
 
-- Python 3.10+
-- NVIDIA GPU recommended
-- CUDA recommended for faster processing
+- Python 3.10 یا بالاتر
+- کارت گرافیک NVIDIA پیشنهاد می‌شود
+- CUDA برای پردازش سریع‌تر پیشنهاد می‌شود
 
-## Setup
+## نصب:
 
 ```bash
 git clone https://github.com/hamzeht1392-ops/Old-Photo-AI.git
@@ -76,41 +106,72 @@ python app.py
 
 ---
 
-# 🤖 AI Models
+# 📦 پیش‌نیازها
 
-The application automatically downloads required models on the first run.
+مهم‌ترین کتابخانه‌های استفاده شده:
 
-Models used:
-
-- SAM 2
-- LaMa Inpainting
-- DDColor
-
----
-
-# ⚙️ Technologies
-
-Built with:
-
-- Python
 - PyTorch
 - Gradio
 - OpenCV
 - Transformers
-- AI Image Restoration Models
+- Pillow
+- Simple-Lama-Inpainting
+
+لیست کامل در فایل زیر قرار دارد:
+
+```
+requirements.txt
+```
 
 ---
 
-# 📝 Notes
+# ⚡ نکات مهم
 
-- First launch may take longer because AI models are downloaded.
-- GPU acceleration is recommended.
-- Model files are not included in this repository because of their large size.
+⚠️ اجرای اول ممکن است کمی طول بکشد.
+
+دلیل:
+- دانلود مدل‌های هوش مصنوعی
+- آماده‌سازی محیط اجرا
+
+مدل‌ها فقط بار اول دانلود می‌شوند.
 
 ---
 
-# 👨‍💻 Creator
+# 📁 ساختار پروژه
 
-Created by:
+```
+Old-Photo-AI/
 
-**Hamzeh**
+│── app.py
+│── requirements.txt
+│── README.md
+│── models/
+│── outputs/
+```
+
+---
+
+# 🌐 اجرا در Google Colab
+
+این پروژه برای اجرای راحت در Google Colab آماده شده است.
+
+مزایا:
+
+- بدون نیاز به نصب دستی CUDA
+- استفاده از GPU رایگان Colab
+- مناسب برای تست سریع پروژه
+
+---
+
+# 👨‍💻 سازنده
+
+ساخته شده توسط:
+
+## Hamzeh
+
+---
+
+# ⭐ حمایت از پروژه
+
+اگر این پروژه برای شما مفید بود، می‌توانید با دادن Star ⭐ از توسعه آن حمایت کنید.
+
